@@ -28,8 +28,8 @@ def newton_rhapson(x0,f,df,tol = 1.0e-12,max_iter= 50):
 
 # Let us try an example
 
-f = lambda x: x**2 - 4
-df = lambda x : 2*x
+f = lambda x: x**3 - 2*x - 5
+df = lambda x : 3*(x**2) -2 
 
-root = newton_rhapson(1.0,f,df)
+root = newton_rhapson(2.0,f,df)
 print(f"The root is : {root}")
