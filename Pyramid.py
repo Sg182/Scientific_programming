@@ -35,6 +35,6 @@ def pyramid_AV(n, s, h):
 
 # Example usage:
 if __name__ == "__main__":
-    V, S = pyramid_AV(n=5, s=2.0, h=3.0)
-    print(f"Volume = {V:.4f}, Surface Area = {S:.4f}")
+    V, S = pyramid_AV(n=4, s=3.0, h=2.0)
+    print(f"Volume = {V:.5f}, Surface Area = {S:.4f}")
 
