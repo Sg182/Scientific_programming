@@ -1,9 +1,3 @@
-from ast import Raise
-from logging import config
-import math
-from shlex import join
-from xml.dom.minidom import Element
-
 # List of all elements upto Z=104
 
 ELEMENTS = [
