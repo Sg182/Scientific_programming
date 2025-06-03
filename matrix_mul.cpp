@@ -69,8 +69,6 @@ int main(){
     }
 
 
-
-
     // free the memory
 
     for (int i=0; i<rows; ++i){
