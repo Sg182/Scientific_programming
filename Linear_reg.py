@@ -1,4 +1,5 @@
 import numpy as np
+import glob
 
 class Experiment:
     
@@ -58,10 +59,10 @@ R = 8.314     # J K^-1 mol^-1
 Temp =[]      #Temperatures
 k_s = []      #Rate constants
 
-files = ['caa-40.txt','caa-50.txt','caa-60.txt','caa-70.txt','caa-80.txt']
+#files = ['caa-40.txt','caa-50.txt','caa-60.txt','caa-70.txt','caa-80.txt']
 
-for file in files:
-
+for file in sorted(glob.glob('caa-*.txt')):               #=====exploited the glob function==========#
+                                                               
     exp = Experiment(file)
     exp.transform(x_func=lambda t:t, y_func=lambda c:1/c)
     k, intercept = exp.Linear_Regression()
