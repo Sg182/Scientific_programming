@@ -25,8 +25,8 @@ class Experiment:
             if not x:
                 raise RuntimeError(f"No valid x-values are available in the file {filename}")
             
-            self.x = np.array(x)
-            self.y = np.array(y)
+         self.x = np.array(x)
+         self.y = np.array(y)
 
 
     def transform(self, x_func=None, y_func=None):
@@ -91,7 +91,6 @@ print('============================================================')
 
 
 
-    
 
         
 
