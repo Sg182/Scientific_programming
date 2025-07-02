@@ -55,3 +55,35 @@ print('The subtraction of the first column of B with the first row of v: \n',sub
 
 print('Multiplying all the elements of B by 2: \n',B*2,'\n')
 
+ 
+
+#=================================================================================================================#
+
+#====================#
+#    Magic Matrix.   #
+#====================#
+
+'''The algorithm is given in Christian Hill page - 208'''
+
+N=5
+
+magic_square = np.zeros((N,N), dtype=float)
+
+n=1
+
+i =0
+j= N//2
+
+while n < N*N:
+    magic_square[i,j] = n
+    n+=1
+    new_i, new_j = (i-1)%N, (j+1)%N
+    
+    if magic_square[new_i,new_j]:
+        i+=1
+    else:
+        i, j = new_i, new_j
+
+print(magic_square)
+
+
