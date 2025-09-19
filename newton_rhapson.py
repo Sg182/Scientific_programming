@@ -1,4 +1,4 @@
-def newton_rhapson(x0,f,df,tol = 1.0e-12,max_iter= 50):
+def newton_rhapson(x0,f,df,tol = 1.0e-12,max_iter= 100):
 
     ''' Newton-Rhapsonmethod o find the root of f(x)=0.
     

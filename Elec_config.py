@@ -1,5 +1,5 @@
 # List of all elements upto Z=104
-
+import sys
 ELEMENTS = [
     "", "H","He","Li","Be","B","C","N","O","F","Ne",
     "Na","Mg","Al","Si","P","S","Cl","Ar","K","Ca","Sc","Ti","V","Cr","Mn","Fe","Co","Ni","Cu","Zn",
@@ -36,7 +36,7 @@ def electronic_config(Z):
         if remaining !=0:
             occupied = min(max_electron_l(l),remaining)
             config.append(f"{n}{orbitals[l]}{occupied}")
-            remaining = remaining- occupied
+            remaining = remaining - occupied
         else:
             break
     
