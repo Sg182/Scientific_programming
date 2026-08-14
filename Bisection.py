@@ -1,7 +1,7 @@
 import math
 
 
-def bisection(func,a,b,tol=1e-8,maxiter=1000):
+def bisection(func,a,b,tol=1e-10,maxiter=1000):
     '''Here we will write a code for obtaining roots for a function f(x) = 0.
     
     f(x) is assumed to be continuous in the interval (a,b), and if f(a)f(b)<0,
@@ -20,7 +20,7 @@ def bisection(func,a,b,tol=1e-8,maxiter=1000):
         c = (a + b)/2
         fun_c = func(c)
         
-        print(f"{i:4d}  {c:9.8f}    {fun_c:8.6f}")
+        print(f"{i:4d}  {c:9.8f}    {fun_c:10.8f}")
 
         if abs(func(c)) < tol:
             return i-1 , c
